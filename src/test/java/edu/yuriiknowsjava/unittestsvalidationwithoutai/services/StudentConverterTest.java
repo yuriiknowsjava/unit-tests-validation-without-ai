@@ -27,7 +27,7 @@ class StudentConverterTest {
     @DisplayName("Test convert high achievers")
     @Test
     void convertStudentsThatAreHighAchievers() {
-        var expectedListSize = 5;
+        var expectedListSize = 4;
         List<Student> highAchievers = Stream.iterate(1, i -> i + 1)
                 .limit(expectedListSize)
                 .map(i -> {
@@ -54,11 +54,11 @@ class StudentConverterTest {
     void convertStudentsThatAreExceptionalYoungHighAchievers() {
         var expectedListSize = 5;
         List<Student> exceptionalYoungHighAchievers = Stream.iterate(1, i -> i + 1)
-                .limit(5)
+                .limit(expectedListSize)
                 .map(i -> {
                     var student = new Student();
+                    student.setGrade(91 + (i % expectedListSize));
                     student.setAge(21 - i);
-                    student.setGrade(91 + (i % 5));
                     return student;
                 })
                 .collect(Collectors.toList());
@@ -77,7 +77,7 @@ class StudentConverterTest {
     @DisplayName("Test convert students that passed")
     @Test
     void convertStudentsThatPassed() {
-        List<Student> studentsThatPassed = Stream.of(71, 75, 80, 81, 90)
+        List<Student> studentsThatPassed = Stream.of(71, 75, 80, 81, 89, 90)
                 .map(grade -> {
                     var student = new Student();
                     student.setGrade(grade);
