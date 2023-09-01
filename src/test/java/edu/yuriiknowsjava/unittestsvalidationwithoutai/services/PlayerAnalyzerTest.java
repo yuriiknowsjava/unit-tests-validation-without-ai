@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 
 import edu.yuriiknowsjava.unittestsvalidationwithoutai.dtos.Player;
-import edu.yuriiknowsjava.unittestsvalidationwithoutai.services.PlayerAnalyzer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -70,6 +69,7 @@ class PlayerAnalyzerTest {
         assertEquals(expected, score, ALLOWED_DELTA);
     }
 
+    @SuppressWarnings("all")
     @DisplayName("Test calculate score null skill")
     @Test
     void calculateScoreNullSkill() {
