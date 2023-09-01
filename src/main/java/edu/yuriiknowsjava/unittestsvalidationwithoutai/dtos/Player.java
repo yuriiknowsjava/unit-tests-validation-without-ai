@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Player {
-    public String name;
-    public int age;
-    public int experience;
-    public List<Integer> skills;
+    private String name;
+    private int age;
+    private int experience;
+    private List<Integer> skills;
 }
