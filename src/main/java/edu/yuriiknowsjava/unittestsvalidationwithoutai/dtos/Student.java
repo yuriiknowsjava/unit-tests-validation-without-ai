@@ -1,4 +1,4 @@
-package edu.yuriiknowsjava.dtos;
+package edu.yuriiknowsjava.unittestsvalidationwithoutai.dtos;
 
 import lombok.Data;
 

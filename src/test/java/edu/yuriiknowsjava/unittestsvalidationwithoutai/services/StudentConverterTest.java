@@ -1,4 +1,4 @@
-package edu.yuriiknowsjava.converters;
+package edu.yuriiknowsjava.unittestsvalidationwithoutai.services;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import edu.yuriiknowsjava.dtos.Student;
+import edu.yuriiknowsjava.unittestsvalidationwithoutai.dtos.Student;
+import edu.yuriiknowsjava.unittestsvalidationwithoutai.services.StudentConverter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

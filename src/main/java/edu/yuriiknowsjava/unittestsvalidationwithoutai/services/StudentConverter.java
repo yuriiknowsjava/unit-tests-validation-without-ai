@@ -1,9 +1,9 @@
-package edu.yuriiknowsjava.converters;
+package edu.yuriiknowsjava.unittestsvalidationwithoutai.services;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import edu.yuriiknowsjava.dtos.Student;
+import edu.yuriiknowsjava.unittestsvalidationwithoutai.dtos.Student;
 
 public class StudentConverter {
 
